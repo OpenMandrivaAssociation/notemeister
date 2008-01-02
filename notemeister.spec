@@ -14,6 +14,7 @@ Source3:	%{name}16.png
 URL:		http://notemeister.sourceforge.net/
 License:	GPL
 Group:		Office
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	python-devel 
 BuildRequires:  ImageMagick
 BuildRequires:  desktop-file-utils
