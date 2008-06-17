@@ -11,6 +11,7 @@ Source:		%{name}-%{version}.tar.bz2
 Source1:	%{name}48.png
 Source2:	%{name}32.png
 Source3:	%{name}16.png
+Patch0:		notemeister-fix-desktop-entry.patch
 URL:		http://notemeister.sourceforge.net/
 License:	GPL
 Group:		Office
@@ -48,6 +49,7 @@ It's features include:
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 python setup.py build
