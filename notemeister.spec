@@ -17,7 +17,7 @@ License:	GPL
 Group:		Office
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	python-devel 
-BuildRequires:  ImageMagick
+BuildRequires:  imagemagick
 BuildRequires:  desktop-file-utils
 Requires:	gnome-python
 Requires:       python-pyxml
