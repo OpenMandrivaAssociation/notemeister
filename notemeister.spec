@@ -1,6 +1,6 @@
 %define name	notemeister
 %define version 0.1.7
-%define release %mkrel 5
+%define release %mkrel 6
 
 Name: 	 	%{name}
 Summary: 	GNOME ideas and notes organizer
