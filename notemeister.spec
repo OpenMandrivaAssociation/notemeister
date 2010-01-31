@@ -1,6 +1,6 @@
 %define name	notemeister
 %define version 0.1.7
-%define release %mkrel 6
+%define release %mkrel 7
 
 Name: 	 	%{name}
 Summary: 	GNOME ideas and notes organizer
@@ -13,7 +13,7 @@ Source2:	%{name}32.png
 Source3:	%{name}16.png
 Patch0:		notemeister-fix-desktop-entry.patch
 URL:		http://notemeister.sourceforge.net/
-License:	GPL
+License:	GPLv2+
 Group:		Office
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	python-devel 
