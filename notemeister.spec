@@ -79,3 +79,56 @@ cp %SOURCE3 $RPM_BUILD_ROOT/%_miconsdir/%name.png
 rm -rf $RPM_BUILD_ROOT
 
 
+
+
+%changelog
+* Fri Oct 29 2010 Michael Scherer <misc@mandriva.org> 0.1.7-8mdv2011.0
++ Revision: 590158
+- rebuild for python 2.7
+
+* Sun Jan 31 2010 Sandro Cazzaniga <kharec@mandriva.org> 0.1.7-7mdv2010.1
++ Revision: 498884
+- Fix licence
+- New maintainer
+
+* Mon Sep 14 2009 Thierry Vignaud <tv@mandriva.org> 0.1.7-6mdv2010.0
++ Revision: 440344
+- rebuild
+
+* Thu Dec 11 2008 Oden Eriksson <oeriksson@mandriva.com> 0.1.7-5mdv2009.1
++ Revision: 313228
+- lowercase ImageMagick
+
+* Tue Jun 17 2008 Thierry Vignaud <tv@mandriva.org> 0.1.7-5mdv2009.0
++ Revision: 222749
+- patch 0: fix 'error: value "0.4.11" for key "Version" in group "Desktop
+  Entry" is not a known version'
+- patch 0: fix 'key "Icon" in group "Desktop Entry" is an icon name with an
+  extension' error
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+
+* Thu Jan 04 2007 Nicolas Lécureuil <neoclust@mandriva.org> 0.1.7-4mdv2007.0
++ Revision: 104113
+- Rebuild against new python
+- Add menu entry
+- Import notemeister
+
+* Sun Mar 05 2006 Michael Scherer <misc@mandriva.org>
+- add pyxml requires, fix 19951
+- use mkrel
+- use new python macro
+
+* Sun Dec 05 2004 Michael Scherer <misc@mandrake.org> 0.1.7-2mdk
+- Rebuild for new python
+
+* Fri Jul 09 2004 Austin Acton <austin@mandrake.org> 0.1.7-1mdk
+- 0.1.7
+
+* Fri Jun 11 2004 Austin Acton <austin@mandrake.org> 0.1-1mdk
+- initial package
+
