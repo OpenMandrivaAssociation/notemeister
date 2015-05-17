@@ -1,13 +1,14 @@
 Name: 	 	notemeister
 Summary: 	GNOME ideas and notes organizer
 Version:	0.1.7
-Release: 	9
+Release: 	10
 
 Source:		%{name}-%{version}.tar.bz2
 Source1:	%{name}48.png
 Source2:	%{name}32.png
 Source3:	%{name}16.png
 Patch0:		notemeister-fix-desktop-entry.patch
+Patch1:		notemeister-0.1.7-no-pyxml.patch
 URL:		http://notemeister.sourceforge.net/
 License:	GPLv2+
 Group:		Office
@@ -43,6 +44,7 @@ It's features include:
 %prep
 %setup -q
 %patch0 -p0
+%patch1 -p1
 
 %build
 python2 setup.py build

@@ -1,0 +1,20 @@
+diff -Naur notemeister-0.1.7.orig/src/lib/NoteTree.py notemeister-0.1.7/src/lib/NoteTree.py
+--- notemeister-0.1.7.orig/src/lib/NoteTree.py	2015-05-17 18:25:00.000000000 +0400
++++ notemeister-0.1.7/src/lib/NoteTree.py	2015-05-17 18:24:16.000000000 +0400
+@@ -7,7 +7,6 @@
+ import gtk.gdk
+ import gobject
+ import xml.dom.minidom 
+-from xml.dom.ext import PrettyPrint
+ 
+ from gettext import gettext as _
+ 
+@@ -191,7 +190,7 @@
+ 
+ 	def write_xml_to_file(self, doc, filename):
+ 		file = open(filename, 'w')
+-		PrettyPrint(doc, file)
++		file.write(doc.toprettyxml())
+ 		file.close()
+ 
+ 	def restore_tree_state(self, tree_state):
