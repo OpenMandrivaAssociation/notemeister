@@ -9,7 +9,7 @@ Source2:	%{name}32.png
 Source3:	%{name}16.png
 Patch0:		notemeister-fix-desktop-entry.patch
 Patch1:		notemeister-0.1.7-no-pyxml.patch
-URL:		http://notemeister.sourceforge.net/
+URL:		https://notemeister.sourceforge.net/
 License:	GPLv2+
 Group:		Office
 BuildRequires:	pkgconfig(python2)
